@@ -1,0 +1,21 @@
+{
+  "name": "the-only-good-vs-code-dark-theme",
+  "displayName": "The only good VS Code dark theme",
+  "description": "The only good dark theme for VS Code",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.78.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "The only good VS Code dark theme",
+        "uiTheme": "vs-dark",
+        "path": "./themes/The only good VS Code dark theme-color-theme.json"
+      }
+    ]
+  }
+}
