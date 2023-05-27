@@ -178,12 +178,6 @@
 			"settings": {
 				"foreground": "#CC7832"
 			}
-		},
-		{
-			"scope": "storage",
-			"settings": {
-				"foreground": "red"
-			}
 		},		
 		{
 			"scope": [
