@@ -7,12 +7,13 @@
 		"editor.background":"#1e1e1e",
 		"activityBar.background": "#323232",
 		"sideBar.background": "#252526",
+		"editorGutter.background": "#222222",
 		"editor.lineHighlightBackground": "#2A2A2B",
 		"editor.inactiveSelectionBackground": "#3a3d41",
 		"editor.selectionHighlightBackground": "#add6ff26",
 		"editorIndentGuide.background": "#404040",
 		"statusBar.background" : "#323232",
-    "statusBar.noFolderBackground" : "#212121",
+    "statusBar.noFolderBackground" : "#323232",
     "statusBar.debuggingBackground": "#263238"
 	},
 	"tokenColors": [		
@@ -40,31 +41,11 @@
 				"foreground": "#7e7e7e"
 			}
 		},
-		{
-			"scope": "constant.language",
-			"settings": {
-				"foreground": "#CC7832",
-				"fontStyle": "bold"
-			}
-		},
-		{
-			"scope": [
-				"constant.numeric"
-			],
-			"settings": {
-				"foreground": "#6897BB"
-			}
-		},
+
 		{
 			"scope": "constant.regexp",
 			"settings": {
 				"foreground": "#646695"
-			}
-		},
-		{
-			"scope": "entity.name.tag.css",
-			"settings": {
-				"foreground": "#FFC66D"
 			}
 		},
 		{
@@ -203,13 +184,6 @@
 			"settings": {
 				"foreground": "red"
 			}
-		},
-		{
-			"scope": "storage.type",
-			"settings": {
-				"foreground": "#CC7832",
-				"fontStyle": "bold"
-			}
 		},		
 		{
 			"scope": [
@@ -255,18 +229,6 @@
 			}
 		},
 		{
-			"name": "JavaScript string interpolation ${}",
-			"scope": [
-				"punctuation.definition.template-expression.begin.js",
-				"punctuation.definition.template-expression.begin.ts",
-				"punctuation.definition.template-expression.end.ts",
-				"punctuation.definition.template-expression.end.js"
-			],
-			"settings": {
-				"foreground": "#A9B7C6"
-			}
-		},
-		{
 			"scope": [
 				"support.type.vendored.property-name",
 				"support.type.property-name",
@@ -300,26 +262,9 @@
 				"foreground": "#A9B7C6"
 			}
 		},
-		{
-			"scope": [
-				"variable.other.readwrite",
-				"variable.other.constant.ts",
-				"variable.parameter",
-				"variable.other.readwrite.alias"
-			],
-			"settings": {
-				"foreground": "#A9B7C6"
-			}
-		},
+
 		{
 			"scope": "keyword",
-			"settings": {
-				"foreground": "#CC7832",
-				"fontStyle": "bold"
-			}
-		},
-		{
-			"scope": "keyword.control",
 			"settings": {
 				"foreground": "#CC7832",
 				"fontStyle": "bold"
@@ -420,7 +365,6 @@
 		{
 			"name" : "Function declarations Python",
 			"scope": [
-				"entity.name.function.python",
 				"meta.function-call.generic.python",
 			],
 			"settings": {
@@ -430,7 +374,6 @@
 		{
 			"name": "Function declarations",
 			"scope": [
-				"entity.name.function",
 				"support.function",
 				"support.constant.handlebars"
 			],
@@ -501,14 +444,6 @@
 			],
 			"settings": {
 				"foreground": "#4EC9B0"
-			}
-		},
-		{
-			"name": "Control flow keywords",
-			"scope": "keyword.control",
-			"settings": {
-				"foreground": "#CC7832",
-				"fontStyle": "bold"
 			}
 		},
 		{
@@ -584,20 +519,146 @@
 
 
 
-
 		{
 			"scope": [
-				"entity.name.tag",	
-			"punctuation.definition.tag.haml",
-			"meta.tag.haml"
+				"support.class",
+				
+				"text.haml",
+				"support.type.property-name.css.sass.prop.name",
+				"source.sass",
+
+				"entity.other.attribute-name.html",
+				"punctuation.definition.tag.begin.html",
+				"punctuation.definition.tag.end.html",
+
+				"support.type.property-name.css",
+				"meta.property-name.css",
+				"meta.property-list.css",
+				"source.css",
+
+				"text.haml",
+				"text.html.django",
+				"js.haml",
+				"meta.brace.round.js",
+
+				"punctuation.section.scope.ruby",
+				"meta.function-call.ruby",
+				"source.ruby.embedded.haml",
+				"meta.line.ruby.haml",
+				"meta.section.attributes.haml",
+				"punctuation.section.function.scss",
+				"meta.definition.variable.scss",
+				"source.css.scss",
+				"punctuation.definition.interpolation.begin.bracket.curly.scss",
+				"punctuation.definition.parameters.end.bracket.round.scss",
+				"punctuation.definition.parameters.begin.bracket.round.scss",
+				"punctuation.section.property-list.begin.bracket.curly.scss",
+				"punctuation.section.property-list.end.bracket.curly.scss",
+
+				"entity.name.function",
+				"meta.property-list.css.sass.prop",
+
+				"punctuation.accessor.js",
+				"punctuation.definition.block.js",
+				"punctuation.definition.parameters.end.js",
+				"punctuation.definition.parameters.begin.js",
+				
+				"punctuation.definition.entity.css",
+				"punctuation.section.function.begin.bracket.round.css",
+				"punctuation.section.function.end.bracket.round.css",
+
+				"text.html.erb",
+				"punctuation.section.embedded.begin.erb",
+				"punctuation.section.embedded.end.erb",
+
+				"entity.tag.tagbraces.django",
+
+				"punctuation.definition.tag.html",
+
 			],
 			"settings": {
-				"foreground": "#7bacc7"
+				"foreground": "#e6e6e6"
 			}
 		},
 		{
 			"scope": [
-				"keyword.control.at-rule.use"
+				"constant.numeric",
+				"constant.language.color.rgb-value.css.sass",
+				"sass.script.maps",
+
+				"constant.other.color.rgb-value",
+				
+			],
+			"settings": {
+				"foreground": "#70a4e7"
+				//"foreground": "#608dc7"
+			}
+		},
+		{
+			"scope": [	
+				"punctuation.definition.tag.haml",
+				"meta.tag.inline.any.html",
+				
+				"source.ruby.embedded.haml",
+
+				"comment.punctuation.comma.sass",
+
+				"support.type.property-name",
+
+				"js.haml",
+				
+				"constant.language.symbol.ruby",
+				"entity.name.function.ruby",
+				"support.function.core.ruby",
+
+				"punctuation.definition.template-expression.begin.js",
+				"punctuation.definition.template-expression.begin.ts",
+				"punctuation.definition.template-expression.end.ts",
+				"punctuation.definition.template-expression.end.js",
+
+				"variable.other.readwrite",
+				
+				"meta.definition.variable.js",
+				
+				"meta.function.expression.js",
+				"meta.block.js",
+				"meta.var-single-variable.expr.js",
+				
+				"constant.language.symbol.hashkey.ruby",
+				"meta.embedded.line.erb",
+
+				"string.unquoted.tag-string.django",
+
+			],
+			"settings": {
+				"foreground": "#a8d7fd"
+			}
+		},		
+		{
+			"scope": [
+				"keyword.control.at-rule.use",
+
+				"source.ruby.embedded.haml",
+
+				"entity.name.tag.haml",
+
+				"keyword.control.at-rule.css.sass",
+				"source.sass",
+
+				"storage.type",
+				"storage.type.templatetag.django",
+
+
+				"keyword.control",
+
+				"punctuation.terminator.statement.js",
+				"punctuation.terminator.rule.css",
+				
+				"constant.language.ruby",
+				"entity.name.tag.yaml",
+
+				"constant.language.python",
+			
 			],
 			"settings": {
 				"foreground": "#CC7832"
@@ -605,30 +666,80 @@
 		},	
 		{
 			"scope": [
-				"constant.character.css.sass",
-				"source.sass"
-			],
-			"settings": {
-				"foreground": "#6b8655"
-			}
-		},		
-		{
-			"scope": [
+				"entity.other.attribute-name",
+				"entity.other.attribute-name.class",
+				"entity.other.attribute-name.class.css.sass",
 				"entity.other.attribute-name.id",
 				"meta.selector.css",
-				"entity.other.attribute-name.id.css.sass"
+				"entity.other.attribute-name.id.css.sass",
+				"meta.property-name.scss",
+				"entity.name.function.scss",
+
+				"punctuation.definition.tag.haml",
+
+				"entity.name.tag",
+				"entity.name.tag.inline.any.html",
+				"keyword.control.tag-name.django",
+				"storage.type.templatetag.django",
+
+				"entity.name.function.js",
+				"meta.function-call.js",
+				"meta.tag.sgml.doctype.html",
+
+				"entity.name.function.python",
+				
 			],
 			"settings": {
 				"foreground": "#FFC66D"
 			}			
+		},		
+		{
+			"scope": [
+				"constant.character.css.sass",
+			],
+			"settings": {
+				"foreground": "#6b8655"
+			}
+		},	
+				{
+			"scope": [
+				"support.constant.property-value",
+
+				
+
+				"meta.definition.variable.scss",
+				"support.type.property-name.css.sass",
+
+				"string.quoted.double.html",
+				"meta.tag.inline.any.html",
+
+				"constant.language.boolean.false.js",
+				"constant.language.boolean.true.js",
+
+				"constant.language.json.comments"
+			],
+			"settings": {
+				"foreground": "#a1bc5f"
+			}
+		},	
+		{
+			"scope": [
+				"variable.scss",
+				
+				"source.css.scss",
+
+				"variable.other.readwrite",
+				"variable.other.constant.ts",
+				"variable.parameter",
+				"variable.other.readwrite.alias",
+				"variable.other.readwrite.js",
+				"variable.other.object",
+				
+			],
+			"settings": {
+				"foreground": "#9876AA"
+			}			
 		}
-
-
-
-
-
-
-
 
 	]
 }
