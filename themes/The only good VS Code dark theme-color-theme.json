@@ -3,7 +3,7 @@
 	"type": "dark",
 	"colors": {
 		"list.dropBackground": "#383b3d",
-		"editor.foreground": "#e6e6e6",
+		"editor.foreground": "#dbdada",
 		"editor.background":"#1e1e1e",
 		"activityBar.background": "#323232",
 		"sideBar.background": "#252526",
@@ -19,7 +19,7 @@
 	"tokenColors": [		
 		{
 			"scope": "emphasis",
-			"settings": {
+			"settings": { 
 				"fontStyle": "italic"
 			}
 		},
