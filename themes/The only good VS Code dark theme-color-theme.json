@@ -553,6 +553,8 @@
 
 				"punctuation.definition.tag.html",
 
+				"punctuation.definition.tag.xml"
+
 			],
 			"settings": {
 				"foreground": "#e6e6e6"
@@ -606,6 +608,8 @@
 				"meta.embedded.line.erb",
 
 				"string.unquoted.tag-string.django",
+
+				"entity.other.attribute-name.localname.xml"
 
 			],
 			"settings": {
