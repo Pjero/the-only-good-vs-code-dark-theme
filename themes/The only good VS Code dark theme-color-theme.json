@@ -696,7 +696,9 @@
 				"constant.language.boolean.false.js",
 				"constant.language.boolean.true.js",
 
-				"constant.language.json.comments"
+				"constant.language.json.comments",
+				"string.quoted.double.json.comments"
+				
 			],
 			"settings": {
 				"foreground": "#a1bc5f"
